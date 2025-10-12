@@ -1,0 +1,38 @@
+🎨 هذا المجلد مخصص لأعمالك السابقة
+📁 This folder is for your portfolio works
+
+📋 كيفية الاستخدام / How to use:
+====================================
+
+1. ضع صور أعمالك هنا
+   Place your work images here
+
+2. ضع فيديوهات أعمالك هنا
+   Place your work videos here
+
+3. سمّ الملفات بأسماء واضحة:
+   Name files clearly:
+   ✅ logo-design-1.jpg
+   ✅ social-post-1.jpg
+   ✅ video-project-1.mp4
+   ✅ video-project-1-thumb.jpg (للفيديوهات)
+
+4. راجع ملف HOW-TO-ADD-WORKS.md
+   Check HOW-TO-ADD-WORKS.md file
+
+📌 أمثلة على الأسماء:
+===================
+- work-1.jpg
+- logo-company-x.png
+- social-media-campaign-1.jpg
+- video-promo-1.mp4
+- video-promo-1-poster.jpg
+
+💡 نصيحة:
+=========
+استخدم أرقام متسلسلة أو أسماء وصفية
+Use sequential numbers or descriptive names
+
+🎉 بالتوفيق!
+Good luck!
+
