@@ -108,43 +108,6 @@ document.querySelectorAll('.stat-number').forEach(stat => {
     counterObserver.observe(stat);
 });
 
-// Portfolio Filter Functionality
-const filterButtons = document.querySelectorAll('.tab-btn');
-const portfolioGrid = document.getElementById('portfolio-grid');
-
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        
-        // Add active class to clicked button
-        button.classList.add('active');
-        
-        // Get filter value
-        const filterValue = button.getAttribute('data-filter');
-        
-        // Filter portfolio items
-        const portfolioItems = portfolioGrid.querySelectorAll('.portfolio-item');
-        
-        portfolioItems.forEach(item => {
-            const itemCategory = item.getAttribute('data-category');
-            
-            if (filterValue === 'all' || itemCategory === filterValue) {
-                item.style.display = 'block';
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'scale(1)';
-                }, 10);
-            } else {
-                item.style.opacity = '0';
-                item.style.transform = 'scale(0.8)';
-                setTimeout(() => {
-                    item.style.display = 'none';
-                }, 300);
-            }
-        });
-    });
-});
 
 // Intersection Observer for Animations
 const observerOptions = {
@@ -162,7 +125,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-const animateElements = document.querySelectorAll('.service-row, .package-row, .portfolio-item, .stat-item');
+const animateElements = document.querySelectorAll('.service-row, .journey-narrative, .value-proposition, .portfolio-item, .stat-item');
 animateElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -174,7 +137,7 @@ animateElements.forEach(el => {
 const currentYear = new Date().getFullYear();
 const footerCopy = document.querySelector('.footer-copy');
 if (footerCopy) {
-    footerCopy.textContent = `© ${currentYear} مصطفي السيسي - Mohamed Beshir. جميع الحقوق محفوظة`;
+    footerCopy.textContent = `© ${currentYear} Mostafa Elsese. All rights reserved`;
 }
 
 // Portfolio Management Functions
@@ -309,7 +272,7 @@ window.portfolioManager = portfolioManager;
 
 
 // Console message for developers
-console.log('%c مصطفي السيسي - Mohamed Beshir ', 'background: linear-gradient(135deg, #00BCD4, #00E676); color: white; font-size: 20px; padding: 10px;');
+console.log('%c Mostafa Elsese ', 'background: linear-gradient(135deg, #00BCD4, #00E676); color: white; font-size: 20px; padding: 10px;');
 console.log('%c 📸 Portfolio Manager متاح الآن! ', 'color: #00BCD4; font-size: 16px; font-weight: bold;');
 console.log('%c لإضافة عمل واحد:', 'color: #888; font-size: 14px;');
 console.log(`window.portfolioManager.addItem({
